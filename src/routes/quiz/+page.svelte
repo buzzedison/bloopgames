@@ -153,67 +153,80 @@
 
 <style>
   body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #edf2f7;
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
 
   .quiz-container {
+    width: 90%;
     max-width: 800px;
-    margin: 2rem auto;
-    background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    border-radius: 10px;
-    padding: 2rem;
-    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 14px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 2em;
+    text-align: left;
   }
 
   h3 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    color: #2d3748;
+    font-size: 1.25rem;
+    color: #3c4043;
+    margin-bottom: 1.25em;
+    font-weight: 500;
   }
 
   ul {
     list-style: none;
     padding: 0;
-    display: grid;
-    gap: 1rem;
   }
 
   li {
     display: flex;
-    background: #f7fafc;
-    border-radius: 5px;
-    padding: 15px;
     align-items: center;
-    transition: all 0.2s ease-in-out;
+    background: #e8f0fe;
+    padding: 1em;
+    border-radius: 8px;
+    margin-bottom: 1em;
     cursor: pointer;
+    transition: background 0.3s;
   }
 
   li:hover {
-    transform: scale(1.02);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    background: #dceafb;
   }
 
   label {
-    flex: 1;
-    margin-left: 15px;
+    margin-left: 1em;
+    color: #202124;
+    font-size: 1rem;
+  }
+
+  input[type="radio"] {
+    height: 20px;
+    width: 20px;
+    background-color: #dceafb;
   }
 
   button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 2rem;
-    background-color: #48bb78;
-    color: #fff;
+    background: #1a73e8;
+    padding: 0.75em 1.5em;
+    color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
+    font-size: 1rem;
     cursor: pointer;
-    transition: all 0.2s ease-in-out;
+    transition: background 0.3s;
+    margin-top: 2em;
+    display: block;
+    width: 100%;
   }
 
   button:hover {
-    background-color: #38a169;
-    transform: scale(1.05);
+    background: #185abc;
   }
 </style>
